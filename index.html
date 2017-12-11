@@ -9,21 +9,34 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
-  <img src="XXX" alt="amsterdam">
-  <h1>How do you feel today?</h1>
-  <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
-  <div>
-    <button>Feeling</button>
-    <!--When clicking on the button, a new section opens (like in your website with the jobs, etc. Kathi)-->
+  <!-- section with buttons-->
+    <img src="XXX" alt="amsterdam">
+    <h1>How do you feel today?</h1>
+  
+    <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
+    <div id="button-happy">
+      <button>Feeling</button>
+      <!--When clicking on the button, a new section opens (like in your website with the jobs, etc. Kathi), when you click on another button or on the button again, the section closes again-->
+    </div>
+    <div id="button-sad"></div>
+    <div id="button-exhausted"></div>
+  
+    <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
+    <div id="button-partymood"></div>
+    <div id="button-studyhard"></div>
+    <div id="button-christmas"></div>
+  
+  <!--New section below the buttons that opens when you click on the button -->
+  <div id="photo-container-happy">
     <p>Some funny text relating to the feeling introducing the following giphys</p>
     <!--id="photo-container-happy" adding giphys here-->
     <!--adding suggestions where to go to in Amsterdam-->
   </div>
   <div id="photo-container-sad"></div>
   <div id="photo-container-exhausted"></div>
-  <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
   <div id="photo-container-partymood"></div>
   <div id="photo-container-studyhard"></div>
   <div id="photo-container-christmas"></div>
+  
 </body>
 </html>
