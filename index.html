@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Final Challenge of the A-Team</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="javascript.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
+   <h2 class="display-5">Amsterdam, December 2017</h2>
+   <h1 class="display-1"><b>How do you feel ? </b></h1>
   <!-- section with buttons-->
-    <img src="XXX" alt="amsterdam">
-    <h1>How do you feel today?</h1>
-  
-    <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
-    <div id="button-happy">
-      <button>Feeling</button>
-      <!--When clicking on the button, a new section opens (like in your website with the jobs, etc. Kathi), when you click on another button or on the button again, the section closes again-->
-    </div>
-    <div id="button-sad"></div>
-    <div id="button-exhausted"></div>
-  
+   <div class="container-fluid">
+   <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
+    <div class="row">
+      <div class="col-lg-4">
+        <button type="button" class="btn btn-outline-info"><h1><b>Happy</b></h1></button>
+        <!--When clicking on the button, a new section opens (like in your website with the jobs, etc. Kathi), when you click on another button or on the button again, the section closes again-->
+      </div>
+      <div class="col-lg-4">
+        <button type="button" class="btn btn-outline-secondary"><h1><b>Sad</b></h1></button>
+      </div>
+      <div class="col-lg-4">
+        <button type="button" class="btn btn-outline-warning"><h1><b>Exhausted</b></h1></button>
+      </div>
+   </div> <!-- first row closed -->
     <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
-    <div id="button-partymood"></div>
-    <div id="button-studyhard"></div>
-    <div id="button-christmas"></div>
+  <div class="row-2"> <!--need this for css, to make some space between the two rows -->
+  <div class="row">
+    <div class="col-lg-4">
+        <button type="button" class="btn btn-outline-success"><h1><b>Partymood</b></h1></button>
+    </div>
+    <div class="col-lg-4">
+        <button type="button" class="btn btn-outline-primary"><h1><b>Studyhard</b></h1></button>
+    </div>
+    <div class="col-lg-4">
+        <button type="button" class="btn btn-outline-danger"><h1><b>Xmas</b></h1></button>
+    </div>
+  </div> <!-- second row closed-->
+</div> <!-- row-2 closed-->
+</div> <!-- fluid container closed -->
   
   <!--New section below the buttons that opens when you click on the button -->
   <div id="photo-container-happy">
