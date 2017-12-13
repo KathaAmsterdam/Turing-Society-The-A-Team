@@ -1,20 +1,132 @@
+//there might be a more general way to do that, but due to lack of time here it is the manual way
+//happy
 $.ajax({
   url: 'http://api.giphy.com/v1/gifs/search',
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'feierabend',  // We are searching for cats
-    limit: 15,  // We limit this search to 5 gifs only
+    limit: 15,  // We limit this search to 15 gifs only
     api_key: 'dc6zaTOxFJmzC'  // Password to authenticate us as a legitimate Giphy user
   },
-  success: handleResults  // Name of a function to be called after API call was successful
+  success: handleResultsHappy  // Name of a function to be called after API call was successful
 });
 
-function handleResults(response_body) {
+function handleResultsHappy(response_body) {
 	response_body.data.forEach(function(item) {
 		var url = item.images.fixed_height_downsampled.url;
 		var image = $(document.createElement("img"));
 		image.attr("src", url)
-		image.appendTo("#photo-container")
+		image.appendTo("#photo-container-happy")
+	})
+}
+
+//hungover
+$.ajax({
+  url: 'http://api.giphy.com/v1/gifs/search',
+  method: 'GET',
+  contentType: 'application/json; charset=UTF-8',
+  data: {
+    q:'feierabend',
+    limit: 15,
+    api_key: 'dc6zaTOxFJmzC'
+  },
+  success: handleResultsHungover
+});
+
+function handleResultsHungover(response_body) {
+	response_body.data.forEach(function(item) {
+		var url = item.images.fixed_height_downsampled.url;
+		var image = $(document.createElement("img"));
+		image.attr("src", url)
+		image.appendTo("#photo-container-hungover")
+	})
+}
+
+//exhausted
+$.ajax({
+  url: 'http://api.giphy.com/v1/gifs/search',
+  method: 'GET',
+  contentType: 'application/json; charset=UTF-8',
+  data: {
+    q:'feierabend',
+    limit: 15,
+    api_key: 'dc6zaTOxFJmzC'
+  },
+  success: handleResultsExhausted
+});
+
+function handleResultsExhausted(response_body) {
+	response_body.data.forEach(function(item) {
+		var url = item.images.fixed_height_downsampled.url;
+		var image = $(document.createElement("img"));
+		image.attr("src", url)
+		image.appendTo("#photo-container-exhausted")
+	})
+}
+
+//partymode
+$.ajax({
+  url: 'http://api.giphy.com/v1/gifs/search',
+  method: 'GET',
+  contentType: 'application/json; charset=UTF-8',
+  data: {
+    q:'feierabend',
+    limit: 15,
+    api_key: 'dc6zaTOxFJmzC'
+  },
+  success: handleResultsPartymode
+});
+
+function handleResultsPartymode(response_body) {
+	response_body.data.forEach(function(item) {
+		var url = item.images.fixed_height_downsampled.url;
+		var image = $(document.createElement("img"));
+		image.attr("src", url)
+		image.appendTo("#photo-container-partymode")
+	})
+}
+
+//studyhard
+$.ajax({
+  url: 'http://api.giphy.com/v1/gifs/search',
+  method: 'GET',
+  contentType: 'application/json; charset=UTF-8',
+  data: {
+    q:'feierabend',
+    limit: 15,
+    api_key: 'dc6zaTOxFJmzC'
+  },
+  success: handleResultsStudyhard
+});
+
+function handleResultsStudyhard(response_body) {
+	response_body.data.forEach(function(item) {
+		var url = item.images.fixed_height_downsampled.url;
+		var image = $(document.createElement("img"));
+		image.attr("src", url)
+		image.appendTo("#photo-container-studyhard")
+	})
+}
+
+//christmas
+$.ajax({
+  url: 'http://api.giphy.com/v1/gifs/search',
+  method: 'GET',
+  contentType: 'application/json; charset=UTF-8',
+  data: {
+    q:'feierabend',
+    limit: 15,
+    api_key: 'dc6zaTOxFJmzC'
+  },
+  success: handleResultsChristmas
+});
+
+function handleResultsChristmas(response_body) {
+	response_body.data.forEach(function(item) {
+		var url = item.images.fixed_height_downsampled.url;
+		var image = $(document.createElement("img"));
+		image.attr("src", url)
+		image.appendTo("#photo-container-christmas")
 	})
 }
