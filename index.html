@@ -16,27 +16,27 @@
    <div class="container-fluid">
    <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-sm-4">
         <button type="button" class="btn btn-outline-info"><h1><b>Happy</b></h1></button>
         <!--When clicking on the button, a new section opens (like in your website with the jobs, etc. Kathi), when you click on another button or on the button again, the section closes again-->
       </div>
-      <div class="col-lg-4">
+      <div class="col-sm-4">
         <button type="button" class="btn btn-outline-secondary"><h1><b>Sad</b></h1></button>
       </div>
-      <div class="col-lg-4">
+      <div class="col-sm-4">
         <button type="button" class="btn btn-outline-warning"><h1><b>Exhausted</b></h1></button>
       </div>
    </div> <!-- first row closed -->
     <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
   <div class="row-2"> <!--need this for css, to make some space between the two rows -->
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-sm-4">
         <button type="button" class="btn btn-outline-success"><h1><b>Partymood</b></h1></button>
     </div>
-    <div class="col-lg-4">
+    <div class="col-sm-4">
         <button type="button" class="btn btn-outline-primary"><h1><b>Studyhard</b></h1></button>
     </div>
-    <div class="col-lg-4">
+    <div class="col-sm-4">
         <button type="button" class="btn btn-outline-danger"><h1><b>Xmas</b></h1></button>
     </div>
   </div> <!-- second row closed-->
@@ -44,12 +44,16 @@
 </div> <!-- fluid container closed -->
   
   <!--New section below the buttons that opens when you click on the button -->
-  <div id="photo-container-happy">
+  <div class="row-2"> <!--need this for css, to make some space between the two rows -->
+   <div class="row">
+    <div id="photo-container-happy">
     <p>Some funny text relating to the feeling introducing the following giphys</p>
     <!--id="photo-container-happy" adding giphys here-->
-    <!--adding suggestions where to go to in Amsterdam-->
+      <p>Adding suggestions where to go to in Amsterdam</p>
+    </div>
+   </div>
   </div>
-  <div id="photo-container-sad"></div>
+  <div id="photo-container-hungover"></div>
   <div id="photo-container-exhausted"></div>
   <div id="photo-container-partymood"></div>
   <div id="photo-container-studyhard"></div>
