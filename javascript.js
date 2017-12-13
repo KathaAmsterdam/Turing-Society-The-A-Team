@@ -5,7 +5,7 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'feierabend',  // We are searching for cats
+    q:'happy',  // We are searching for cats
     limit: 15,  // We limit this search to 15 gifs only
     api_key: 'dc6zaTOxFJmzC'  // Password to authenticate us as a legitimate Giphy user
   },
@@ -27,7 +27,7 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'feierabend',
+    q:'hangover',
     limit: 15,
     api_key: 'dc6zaTOxFJmzC'
   },
@@ -49,7 +49,7 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'feierabend',
+    q:'exhausted',
     limit: 15,
     api_key: 'dc6zaTOxFJmzC'
   },
@@ -71,7 +71,7 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'feierabend',
+    q:'party',
     limit: 15,
     api_key: 'dc6zaTOxFJmzC'
   },
@@ -93,7 +93,7 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'feierabend',
+    q:'study hard',
     limit: 15,
     api_key: 'dc6zaTOxFJmzC'
   },
@@ -115,7 +115,7 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'feierabend',
+    q:'christmas',
     limit: 15,
     api_key: 'dc6zaTOxFJmzC'
   },
