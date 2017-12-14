@@ -5,8 +5,8 @@ $.ajax({
   method: 'GET',
   contentType: 'application/json; charset=UTF-8',
   data: {
-    q:'happy',  // We are searching for cats
-    limit: 15,  // We limit this search to 15 gifs only
+    q:'happy',  // We are searching for happy
+    limit: 1,  // We limit this search to 15 gifs only
     api_key: 'dc6zaTOxFJmzC'  // Password to authenticate us as a legitimate Giphy user
   },
   success: handleResultsHappy  // Name of a function to be called after API call was successful
