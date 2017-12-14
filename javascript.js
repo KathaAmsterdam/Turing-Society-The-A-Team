@@ -6,7 +6,7 @@ $.ajax({
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'happy',  // We are searching for happy
-    limit: 1,  // We limit this search to 15 gifs only
+    limit: 1,  // We limit this search to 1 gif only
     api_key: 'dc6zaTOxFJmzC'  // Password to authenticate us as a legitimate Giphy user
   },
   success: handleResultsHappy  // Name of a function to be called after API call was successful
@@ -28,7 +28,7 @@ $.ajax({
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'hangover',
-    limit: 15,
+    limit: 1,
     api_key: 'dc6zaTOxFJmzC'
   },
   success: handleResultsHungover
