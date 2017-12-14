@@ -28,7 +28,7 @@ $.ajax({
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'hangover',
-    limit: 1,
+    limit: 1 ,
     api_key: 'dc6zaTOxFJmzC'
   },
   success: handleResultsHungover
