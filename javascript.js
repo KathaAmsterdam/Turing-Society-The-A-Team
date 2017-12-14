@@ -72,7 +72,7 @@ $.ajax({
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'party',
-    limit: 15,
+    limit: 1,
     api_key: 'dc6zaTOxFJmzC'
   },
   success: handleResultsPartymode
