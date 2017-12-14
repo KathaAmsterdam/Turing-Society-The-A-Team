@@ -24,95 +24,159 @@
    <div class="container-fluid">
    <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
     <div class="row">
+      <!-- button 1 -->
       <div class="col-sm-4">
-        <button type="button" class="btn data-toggle="modal" data-target="#myModal"" > btn-outline-info"><h1><b>Happy</b></h1></button>
-        <!--When clicking on the button, a new section opens (like in your website with the jobs, etc. Kathi), when you click on another button or on the button again, the section closes again-->
+        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal"><h1><b>Happy</b></h1></button>
+        <!--click= modal, oopens pop up window-->
+        <!--modal here-->
+        <div class="modal fade" id="myModal" role="dialog">
+  			<div class="modal-dialog">
+
+        <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body" id="photo-container-happy">
+		      	<p> what makes you happy in amsterdam?</p>
+		      </div>
+		      </div>
+	  		  </div>
+		    </div>
+		  </div>
+		<!-- button 2 feeling hungover -->
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal2""><h1><b>Hungover</b></h1></button>
+     <!-- click modal, oopens pop up window -->
+        <!--modal here-->
+        <div class="modal fade" id="myModal2" role="dialog">
+  			<div class="modal-dialog">
+
+        <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body" id="photo-container-hungover">
+		      	<p> what mdo to when you're hungover??</p>
+		      </div>
+		  	</div>
+	  		</div>
+		</div>
       </div>
+      <!--button 3 exhausted -->
       <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-secondary data-toggle="modal" data-target="#myModal""><h1><b>Sad</b></h1></button>
-      </div>
-      <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-warning data-toggle="modal" data-target="#myModal""><h1><b>Exhausted</b></h1></button>
+        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal3"><h1><b>Exhausted</b></h1></button>
+        <!--click= modal, oopens pop up window-->
+        <!--modal here-->
+        <div class="modal fade" id="myModal3" role="dialog">
+  			<div class="modal-dialog">
+
+        <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body" id="photo-container-exhausted">
+		      	<p> need some place to rest?</p>
+		      </div>
+		  	</div>
+	  		</div>
+		</div>
       </div>
    </div> <!-- first row closed -->
     <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
   <div class="row-2"> <!--need this for css, to make some space between the two rows -->
   <div class="row">
+  	<!-- button 4 partymood -->
     <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-success data-toggle="modal" data-target="#myModal""><h1><b>Partymood</b></h1></button>
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal4"><h1><b>Partymood</b></h1></button>
+        <!--click= modal, oopens pop up window-->
+        <!--modal here-->
+        <div class="modal fade" id="myModal4" role="dialog">
+  			<div class="modal-dialog">
+
+        <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body" id="photo-container-partymode">
+		      	<p> let's have a party!</p>
+		      </div>
+		  	</div>
+	  		</div>
+		</div>
     </div>
+    <!-- button 5 study hard -->
     <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-primary"><h1><b>Studyhard</b></h1></button>
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal5"><h1><b>Study hard</b></h1></button>
+        <!--click= modal, oopens pop up window-->
+        <!--modal here-->
+        <div class="modal fade" id="myModal5" role="dialog">
+  			<div class="modal-dialog">
+
+        <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body" id="photo-container-studyhard">
+		      	<p> time to study...</p>
+		      </div>
+		  	</div>
+	  		</div>
+		</div>
     </div>
+    <!--button 6 christmas -->
     <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-danger"><h1><b>Xmas</b></h1></button>
+        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal6"><h1><b>Xmas</b></h1></button>
+    	<!--click= modal, oopens pop up window-->
+        <!--modal here-->
+        <div class="modal fade" id="myModal6" role="dialog">
+  			<div class="modal-dialog">
+
+        <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body" id="photo-container-christmas">
+		      	<p> christmas time is here!</p>
+		      </div>
+		  	</div>
+	  		</div>
+		</div>
     </div>
   </div> <!-- second row closed-->
 </div> <!-- row-2 closed-->
 </div> <!-- fluid container closed -->
   
-  <!--New section below the buttons that opens when you click on the button -->
-  <div class="row-2">
-  <div class="container-fluid bg-3 text-center">
-   <div class="row" id="happy">
-    <h1>Happy</h1>
-    <p>Some funny text relating to the feeling introducing the following giphys</p>
-    <div id="photo-container-happy"><!--id="photo-container-happy" adding giphys here--></div>
-    <h2>Where to go to in Amsterdam</h2>
-    <p>Adding suggestions where to go to in Amsterdam</p>
-   </div>
-  </div>
-  </div>
-  
-  <div class="row-2">
-  <div class="container-fluid bg-3 text-center">
-   <div class="row">
-    <p>Some funny text relating to the feeling introducing the following giphys</p>
-    <div id="photo-container-hungover"><!--id="photo-container-happy" adding giphys here--></div>
-    <p>Adding suggestions where to go to in Amsterdam</p>
-   </div>
-  </div>
-  </div>    
-  
-  <div class="row-2">
-  <div class="container-fluid bg-3 text-center">
-    <div class="row">
-    <p>Some funny text relating to the feeling introducing the following giphys</p>
-    <div id="photo-container-exhausted"><!--id="photo-container-happy" adding giphys here--></div>
-    <p>Adding suggestions where to go to in Amsterdam</p>
-   </div>
-  </div>
-  </div> 
-    
-  <div class="row-2">
-  <div class="container-fluid bg-3 text-center">
-   <div class="row">
-    <p>Some funny text relating to the feeling introducing the following giphys</p>
-    <div id="photo-container-partymode"><!--id="photo-container-happy" adding giphys here--></div>
-    <p>Adding suggestions where to go to in Amsterdam</p>
-   </div>
-  </div>
-  </div>  
-  
-  <div class="row-2">
-  <div class="container-fluid bg-3 text-center">
-   <div class="row">
-    <p>Some funny text relating to the feeling introducing the following giphys</p>
-    <div id="photo-container-studyhard"><!--id="photo-container-happy" adding giphys here--></div>
-    <p>Adding suggestions where to go to in Amsterdam</p>
-   </div>
-  </div>
-  </div> 
+<!--new section for google maps -->
+<!-- Add Google Maps -->
+<div class="row-2" id="googleMap" style="width:100%;height:400px;"></div>
 
-  <div class="row-2">
-  <div class="container-fluid bg-3 text-center">
-   <div class="row">
-    <p>Some funny text relating to the feeling introducing the following giphys</p>
-    <div id="photo-container-christmas"><!--id="photo-container-happy" adding giphys here--></div>
-    <p>Adding suggestions where to go to in Amsterdam</p>
-   </div>
-  </div>
-  </div>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvRAf9jAdcxpNYrX_JVZvFDn5wG0MhOZE&callback=myMap"></script>
+
+
+<!--footer add link to navbar!!-->
+	<footer id="footer">
+		<a class="up-arrow" href="#navbar" data-toggle="tooltip" title="go up">
+	    	<span class="glyphicon glyphicon-chevron-up"></span>
+	  	</a><br>
+		<p>&copy; 2017 | The A Team</p>
+	</footer>
+
  
     
 </body>
