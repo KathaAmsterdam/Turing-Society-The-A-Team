@@ -116,7 +116,7 @@ $.ajax({
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'christmas',
-    limit: 15,
+    limit: 1,
     api_key: 'dc6zaTOxFJmzC'
   },
   success: handleResultsChristmas
