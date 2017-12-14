@@ -94,7 +94,7 @@ $.ajax({
   contentType: 'application/json; charset=UTF-8',
   data: {
     q:'study hard',
-    limit: 15,
+    limit: 1,
     api_key: 'dc6zaTOxFJmzC'
   },
   success: handleResultsStudyhard
