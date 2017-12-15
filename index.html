@@ -18,165 +18,203 @@
   </head>
   
   <body>
-   <h2 class="display-5">Amsterdam, December 2017</h2>
-   <h1 class="display-1"><b>How do you feel ? </b></h1>
-  <!-- section with buttons-->
-   <div class="container-fluid">
-   <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
-    <div class="row">
-      <!-- button 1 -->
-      <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal"><h1><b>Happy</b></h1></button>
-        <!--click= modal, oopens pop up window-->
-        <!--modal here-->
-        <div class="modal fade" id="myModal" role="dialog">
-  			<div class="modal-dialog">
 
-        <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      </div>
-		       <div class="modal-body" id="photo-container-happy">
-		      	<p> what makes you happy in amsterdam?</p>
-		      </div>
-		      </div>
-	  		  </div>
-		    </div>
-		  </div>
-		<!-- button 2 feeling hungover -->
-      <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal2""><h1><b>Hungover</b></h1></button>
-     <!-- click modal, oopens pop up window -->
-        <!--modal here-->
-        <div class="modal fade" id="myModal2" role="dialog">
-  			<div class="modal-dialog">
-        <!-- Modal content-->
-		    	<div class="modal-content">
-		      	<div class="modal-header">
-		          <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      	</div>
-		      	<div class="modal-body" id="photo-container-hungover">
-		      	   <p> what mdo to when you're hungover??</p>
-		        </div>
-		  	</div>
-	  		</div>
-	</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Amsterdam December 2017</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#buttons">Things to do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#map">Find your Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">About us</a> <!-- section not build yet-->
+            </li>
+          </ul>
+        </div>
       </div>
-    <!--button 3 exhausted -->
-      <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal3"><h1><b>Exhausted</b></h1></button>
-    <!--click= modal, oopens pop up window-->
-    <!--modal here-->
-        <div class="modal fade" id="myModal3" role="dialog">
-  			<div class="modal-dialog">
+    </nav>
 
-    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      </div>
-		      <div class="modal-body" id="photo-container-exhausted">
-		      	<p> need some place to rest?</p>
-		      </div>
-		  	</div>
-	  		</div>
-		</div>
-      		</div>
-   	</div> <!-- first row closed -->
-   <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
-  	<div class="row-2"> <!--need this for css, to make some space between the two rows -->
-  		<div class="row">
-  <!-- button 4 partymood -->
-   		<div class="col-sm-4">
-        	<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal4"><h1><b>Partymood</b></h1></button>
-        <!--click= modal, oopens pop up window-->
-        <!--modal here-->
-        <div class="modal fade" id="myModal4" role="dialog">
-  			<div class="modal-dialog">
+    <header class="masthead text-center text-black d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>How do you feel today?</strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      </div>
-		      <div class="modal-body" id="photo-container-partymode">
-		      	<p> let's have a party!</p>
-		      </div>
-		  	</div>
-	  		</div>
-		</div>
-    </div>
-    <!-- button 5 study hard -->
-    <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal5"><h1><b>Study hard</b></h1></button>
-        <!--click= modal, oopens pop up window-->
-        <!--modal here-->
-        <div class="modal fade" id="myModal5" role="dialog">
-  			<div class="modal-dialog">
+   <section id="buttons">
+    <!-- section with buttons-->
+    <div class="container">
+     <!--Bootstrap Row 1 with 3 Containers -> change moods into something cool-->
+      <div class="row">
+        <!-- button 1 -->
+        <div class="col-lg-4 col-sm-4">
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal"><h1><b>Happy</b></h1></button>
+          <!--click= modal, oopens pop up window-->
+          <!--modal here-->
+          <div class="modal fade" id="myModal" role="dialog">
+    			<div class="modal-dialog">
 
-        <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      </div>
-		      <div class="modal-body" id="photo-container-studyhard">
-		      	<p> time to study...</p>
-		      </div>
-		  	</div>
-	  		</div>
-		</div>
-    </div>
-    <!--button 6 christmas -->
-    <div class="col-sm-4">
-        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal6"><h1><b>Xmas</b></h1></button>
-    	<!--click= modal, oopens pop up window-->
-        <!--modal here-->
-        <div class="modal fade" id="myModal6" role="dialog">
-  			<div class="modal-dialog">
+          <!-- Modal content-->
+  		    <div class="modal-content">
+  		      <div class="modal-header">
+  		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  		      </div>
+  		       <div class="modal-body" id="photo-container-happy">
+  		      	<p> what makes you happy in amsterdam?</p>
+  		      </div>
+  		      </div>
+  	  		  </div>
+  		    </div>
+  		  </div>
+  		<!-- button 2 feeling hungover -->
+        <div class="col-lg-4 col-sm-4">
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal2""><h1><b>Hungover</b></h1></button>
+       <!-- click modal, oopens pop up window -->
+          <!--modal here-->
+          <div class="modal fade" id="myModal2" role="dialog">
+    			<div class="modal-dialog">
+          <!-- Modal content-->
+  		    	<div class="modal-content">
+  		      	<div class="modal-header">
+  		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+  		      	</div>
+  		      	<div class="modal-body" id="photo-container-hungover">
+  		      	   <p> what mdo to when you're hungover??</p>
+  		        </div>
+  		  	</div>
+  	  		</div>
+  	</div>
+        </div>
+      <!--button 3 exhausted -->
+        <div class="col-lg-4 col-sm-4">
+          <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal3"><h1><b>Exhausted</b></h1></button>
+      <!--click= modal, oopens pop up window-->
+      <!--modal here-->
+          <div class="modal fade" id="myModal3" role="dialog">
+    			<div class="modal-dialog">
 
-        <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      </div>
-		      <div class="modal-body" id="photo-container-christmas">
-		      	<p> christmas time is here!</p>
-		      </div>
-		  	</div>
-	  		</div>
-		</div>
-    </div>
-  </div> <!-- second row closed-->
-</div> <!-- row-2 closed-->
-</div> <!-- fluid container closed -->
-  
-<!--new section for google maps -->
-<!-- Add Google Maps -->
-<div class="row-2" id="googleMap" style="width:100%;height:400px;"></div>
+      <!-- Modal content-->
+  		    <div class="modal-content">
+  		      <div class="modal-header">
+  		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  		      </div>
+  		      <div class="modal-body" id="photo-container-exhausted">
+  		      	<p> need some place to rest?</p>
+  		      </div>
+  		  	</div>
+  	  		</div>
+  		</div>
+        		</div>
+     	</div> <!-- first row closed -->
+     <!--Bootstrap Row 2 with 3 Containers -> change moods into something cool-->
+    	<div class="row-2"> <!--need this for css, to make some space between the two rows -->
+    		<div class="row">
+    <!-- button 4 partymood -->
+     		<div class="col-lg-4 col-sm-4">
+          	<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal4"><h1><b>Partymood</b></h1></button>
+          <!--click= modal, oopens pop up window-->
+          <!--modal here-->
+          <div class="modal fade" id="myModal4" role="dialog">
+    			<div class="modal-dialog">
 
-<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
+          <!-- Modal content-->
+  		    <div class="modal-content">
+  		      <div class="modal-header">
+  		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  		      </div>
+  		      <div class="modal-body" id="photo-container-partymode">
+  		      	<p> let's have a party!</p>
+  		      </div>
+  		  	</div>
+  	  		</div>
+  		</div>
+      </div>
+      <!-- button 5 study hard -->
+      <div class="col-lg-4 col-sm-4">
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal5"><h1><b>Study hard</b></h1></button>
+          <!--click= modal, oopens pop up window-->
+          <!--modal here-->
+          <div class="modal fade" id="myModal5" role="dialog">
+    			<div class="modal-dialog">
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvRAf9jAdcxpNYrX_JVZvFDn5wG0MhOZE&callback=myMap"></script>
+          <!-- Modal content-->
+  		    <div class="modal-content">
+  		      <div class="modal-header">
+  		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  		      </div>
+  		      <div class="modal-body" id="photo-container-studyhard">
+  		      	<p> time to study...</p>
+  		      </div>
+  		  	</div>
+  	  		</div>
+  		</div>
+      </div>
+      <!--button 6 christmas -->
+      <div class="col-lg-4 col-sm-4">
+          <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal6"><h1><b>Xmas</b></h1></button>
+      	<!--click= modal, oopens pop up window-->
+          <!--modal here-->
+          <div class="modal fade" id="myModal6" role="dialog">
+    			<div class="modal-dialog">
+
+          <!-- Modal content-->
+  		    <div class="modal-content">
+  		      <div class="modal-header">
+  		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  		      </div>
+  		      <div class="modal-body" id="photo-container-christmas">
+  		      	<p> christmas time is here!</p>
+  		      </div>
+  		  	</div>
+  	  		</div>
+  		</div>
+      </div>
+          </div> <!-- second row closed-->
+        </div> <!-- row-2 closed-->
+      </div> <!-- container closed -->
+    </section>
+    s
+    <section id="map">  
+      <!--new section for google maps -->
+      <!-- Add Google Maps -->
+      <div class="row-2" id="googleMap" style="width:100%;height:400px;"></div>
+
+      <script>
+      function myMap() {
+      var mapProp= {
+          center:new google.maps.LatLng(52.3730601,4.8920707),
+          zoom:5,
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvRAf9jAdcxpNYrX_JVZvFDn5wG0MhOZE&callback=myMap"></script>
 
 
-<!--footer add link to navbar!!-->
-	<footer id="footer">
-		<a class="up-arrow" href="#navbar" data-toggle="tooltip" title="go up">
-	    	<span class="glyphicon glyphicon-chevron-up"></span>
-	  	</a><br>
-		<p>&copy; 2017 | The A Team</p>
-	</footer>
+      <!--footer add link to navbar!!-->
+      	<footer id="footer">
+      		<a class="up-arrow" href="#navbar" data-toggle="tooltip" title="go up">
+      	    	<span class="glyphicon glyphicon-chevron-up"></span>
+      	  	</a><br>
+      		<p>&copy; 2017 | The A Team</p>
+      	</footer>
+  </section>
 
  
     
-</body>
+  </body>
 </html>
