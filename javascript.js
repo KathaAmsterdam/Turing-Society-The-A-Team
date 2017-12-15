@@ -1,3 +1,11 @@
+//make the navbar change color when scrolling down
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
 //there might be a more general way to do that, but due to lack of time here it is the manual way
 //happy
 $.ajax({
