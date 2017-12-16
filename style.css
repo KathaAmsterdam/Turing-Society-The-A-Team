@@ -108,3 +108,17 @@ footer a:hover {
     color: #777;
     text-decoration: none;
 }
+
+.modal-header, .modal-body, .close {
+    background-color: #000000;
+    color: #fff !important;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#myModal, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6 {
+
+  margin-top: 12%; 
+
+}
