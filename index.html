@@ -223,6 +223,11 @@
           zoom:5,
       };
       var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      
+      var myCenter = new google.maps.LatLng(52.3730601,4.8920707);
+      var marker = new google.maps.Marker({position:myCenter});
+      marker.setMap(map);                                                              
+                                                          
       }
       </script>
 
